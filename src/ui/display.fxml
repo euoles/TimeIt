@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/display.css" />
+    </stylesheets>
+   <children>
+      <TitledPane fx:id="tpActivityName" animated="false" layoutY="14.0" prefHeight="107.0" prefWidth="589.0" text="Current" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="6.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="txtActivityName" layoutX="231.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Activity">
+                     <font>
+                        <Font name="DejaVu Sans Mono Bold" size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <VBox fx:id="tpcountdown" alignment="CENTER" layoutX="14.0" layoutY="137.0" prefHeight="138.0" prefWidth="590.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <Text fx:id="txtDisplay" strokeType="OUTSIDE" strokeWidth="0.0" text="Seconds" />
+            <Text fx:id="txtDisplay2" fill="#ee0404" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" textOrigin="CENTER">
+               <font>
+                  <Font name="GaramondNo8 Medium" size="64.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/essence/NetBeansProjects/TimeIt/src/controllers/MainboardController.java</file>
+            <file>file:/home/essence/NetBeansProjects/TimeIt/src/controllers/EventsController.java</file>
+            <file>file:/home/essence/NetBeansProjects/TimeIt/src/ui/display.fxml</file>
+            <file>file:/home/essence/NetBeansProjects/TimeIt/src/controllers/SettingsController.java</file>
+            <file>file:/home/essence/NetBeansProjects/TimeIt/src/database/DbConnection.java</file>
+            <file>file:/home/essence/NetBeansProjects/TimeIt/src/database/DbQueries.java</file>
+        </group>
+    </open-files>
+</project-private>

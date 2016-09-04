@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EventsController">
+    <stylesheets>
+        <URL value="@/css/events.css" />
+    </stylesheets>
+   <children>
+      <Text layoutX="464.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="events" />
+      <TitledPane layoutX="22.0" layoutY="33.0" prefHeight="286.0" prefWidth="503.0" text="Event">
+         <content>
+            <Pane prefHeight="125.0" prefWidth="361.0">
+               <children>
+                  <ComboBox fx:id="cmbActivities" layoutX="162.0" layoutY="14.0" onAction="#onCmbActivityChanged" prefHeight="26.0" prefWidth="189.0" promptText="Choose Activity" />
+                  <Text layoutX="83.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration" />
+                  <Text layoutX="220.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hrs" />
+                  <Text layoutX="325.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" />
+                  <Text layoutX="326.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" />
+                  <Button fx:id="btnStartActivity" alignment="CENTER" layoutX="159.0" layoutY="133.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnStartActivityAction" prefWidth="80.0" text="Start" textAlignment="CENTER" />
+                  <Button fx:id="btnStop" disable="true" layoutX="284.0" layoutY="133.0" mnemonicParsing="false" onAction="#btnStopAction" prefHeight="26.0" prefWidth="98.0" text="Stop" />
+                  <Button fx:id="btnDisplay" layoutX="210.0" layoutY="205.0" mnemonicParsing="false" onAction="#btnDisplay" prefHeight="26.0" prefWidth="120.0" text="Display" />
+                  <TextField fx:id="txtHrs" layoutX="161.0" layoutY="58.0" prefHeight="26.0" prefWidth="59.0" />
+                  <TextField fx:id="txtMins" layoutX="254.0" layoutY="58.0" prefHeight="26.0" prefWidth="59.0" />
+                  <TextField fx:id="txtElapseMins" layoutX="255.0" layoutY="96.0" prefHeight="26.0" prefWidth="59.0" />
+                  <TextField layoutX="153.0" layoutY="170.0" prefHeight="26.0" prefWidth="245.0" promptText="Additional Info" />
+               </children>
+            </Pane>
+         </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="20.0" layoutY="328.0" prefHeight="185.0" prefWidth="503.0" text="Message">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="txtBroadCastMessage" layoutX="14.0" layoutY="14.0" prefHeight="126.0" prefWidth="291.0" />
+                  <Button fx:id="btnBroadCast" layoutX="348.0" layoutY="25.0" mnemonicParsing="false" onAction="#btnBroadCastAction" prefHeight="26.0" prefWidth="99.0" text="Broadcast" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>
